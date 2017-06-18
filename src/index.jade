@@ -5,7 +5,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title Hello World
     link(rel='stylesheet', type='text/css', href='build/build.css')
-  body
+  body(style='color:white;')
     article
       section
         div
@@ -67,48 +67,34 @@ html
               li(style='font-size:12px;') Draft Mode - Players pick champions 1 at a time, in a order
               li(style='font-size:12px;')
                 | Ranked Draft Mode - Competitive Draft Mode that tracks progress (via Elo/MMR)
-      section
-        h2 Syntax Highlighting
-        h3
-          | Powered by 
-          a(href='http://twitter.com/LeaVerou') Lea Verou
-          | 's 
-          a(href='https://github.com/LeaVerou/prism') Prism
-        pre.
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3
-          | Powered by 
-          a(href='https://github.com/markdalgleish/bespoke-hash') bespoke-hash
-        p
-          | Look up! This route has been named with a 
-          em 'data-bespoke-hash'
-          |  attribute.
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3
-          | Powered by 
-          a(href='https://github.com/markdalgleish/bespoke-backdrop') bespoke-backdrop
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li
-            | Edit 
-            a(href='http://jade-lang.com/') Jade
-            |  markup in 
-            em 'src/index.jade'
-          li
-            | Edit 
-            a(href='http://learnboost.github.io/stylus/') Stylus
-            |  styles in 
-            em 'src/styles/main.styl'
-          li
-            | Edit JavaScript in 
-            em 'src/scripts/main.js'
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+      section(style=' width: 100% ;left: 0; background: url(images/background.jpg) no-repeat fixed')
+        div(style='height: 100%;')
+          div(style='float : left; margin-left: 150px; ')
+            img(src='images/07.jpg', style='width: 1000px; margin-top: -25px;')
+          div(style='float:left; margin-left: 50px; margin-top:50px;')
+            ul
+              h2
+                li The Maps
+              li
+                | Summoner's Rift - The 5v5 map, 
+                br
+                | the most popular map, 
+                br
+                | and also the largest (tri-lane)
+              li
+                | Twisted Treeline - The 3v3 map, 
+                br
+                | a medium sized map, quicker games, 
+                br
+                | altar capture (semi tri-lane)
+              li
+                | Howling Abyss - ARAM map, smallest map, 
+                br
+                | spawning heald 
+                br
+                | and mana weels (single lane)
+      section(style=' width: 100% ;left: 0; background: url(images/background.jpg) no-repeat fixed')
+        div(style='height: 100%;')
+          h1(style='margin-left: 600px;')  Thank You 
+          video(src='images/Media1.MP4', style='margin-left:600px; height: 300px; width: auto;', autoplay='')
     script(src='build/build.js')
